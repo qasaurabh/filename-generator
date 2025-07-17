@@ -1,0 +1,195 @@
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'Apple Color Emoji', 'Segoe UI Emoji', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.cool-glass-form {
+    max-width: 600px;
+    min-width: 600px;
+    margin: 0 auto;
+    padding: 2.5rem 2.5rem 2rem 2.5rem;
+    border-radius: 1rem;
+    background: #ffffff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e5e7eb;
+    transition: box-shadow 0.2s;
+}
+
+.cool-glass-form:focus-within {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.cool-glass-form h1 {
+    margin-bottom: 2rem;
+    font-size: 1.875rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    text-align: center;
+    color: #1a202c;
+    line-height: 1.2;
+}
+
+.cool-glass-form h1 i {
+    color: #2563eb;
+    margin-right: 0.75rem;
+    font-size: 1.75rem;
+}
+
+.cool-glass-form label {
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 0;
+    display: block;
+    font-size: 0.875rem;
+}
+
+.cool-glass-form label::after {
+    content: ' *';
+    color: #ef4444;
+    font-weight: 600;
+}
+
+.cool-glass-form select, .cool-glass-form input[type="text"] {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #d1d5db;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background: #ffffff;
+    margin-bottom: 1.5rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    color: #111827;
+}
+
+.cool-glass-form select:focus, .cool-glass-form input[type="text"]:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 5px rgba(59, 130, 246, 0.8);
+    outline: none;
+}
+
+.cool-glass-form .btn-primary {
+    width: 100%;
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+    background: #2563eb;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: none;
+    letter-spacing: 0.025em;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.cool-glass-form .btn-primary:hover {
+    background: #1d4ed8;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transform: translateY(-1px);
+}
+
+.cool-glass-form .btn-primary:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 5px rgba(59, 130, 246, 0.8), 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.cool-glass-form .btn-primary:active {
+    background: #1e40af;
+    transform: translateY(0);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.cool-glass-form .btn-secondary {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    background: #ffffff;
+    color: #475569;
+    border: 1px solid #cbd5e1;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    min-width: auto;
+}
+
+.cool-glass-form .btn-secondary:hover {
+    background: #f8fafc;
+    border-color: #94a3b8;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    transform: translateY(-1px);
+}
+
+.cool-glass-form .btn-secondary:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 5px rgba(59, 130, 246, 0.8), 0 1px 2px rgba(0,0,0,0.05);
+    border-color: #2563eb;
+}
+
+.cool-glass-form .btn-secondary:active {
+    background: #e2e8f0;
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.cool-glass-form .btn-secondary i {
+    transition: transform 0.3s ease;
+}
+
+.cool-glass-form .btn-secondary:hover i {
+    transform: rotate(90deg);
+}
+
+.cool-glass-form .btn-copy-filename {
+    padding: 0.5rem 1.2rem;
+    font-size: 1.08rem;
+    border-radius: 0.75rem;
+    background: linear-gradient(90deg,#059669 60%,#34d399 100%);
+    color: white;
+    border: none;
+    font-weight: 600;
+    box-shadow: 0 1.5px 8px rgba(5,150,105,0.10);
+    transition: background 0.2s, box-shadow 0.2s, border 0.2s;
+    cursor: pointer;
+}
+
+.cool-glass-form .btn-copy-filename:hover {
+    background: linear-gradient(90deg,#34d399 40%,#059669 100%);
+    box-shadow: 0 2.5px 12px rgba(5,150,105,0.13);
+}
+
+.cool-glass-form .btn-copy-filename:focus {
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+    outline: none;
+}
+
+.cool-glass-form #generatedFilename span {
+    background: rgba(240,253,244,0.98);
+    color: #059669;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.9rem;
+    font-size: 1.18rem;
+    font-weight: 700;
+    box-shadow: 0 1.5px 8px rgba(5,150,105,0.10);
+    border: 1.5px solid #d1fae5;
+    letter-spacing: 0.6px;
+}
