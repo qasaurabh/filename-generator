@@ -27,6 +27,7 @@ function setupAttachmentFilenameUI() {
                 <option value="" selected disabled>Select status</option>
                 <option value="Fixed">Fixed</option>
                 <option value="NotFixed">NotFixed</option>
+                <option value="PartiallyFixed">PartiallyFixed</option>
                 <option value="Failed">Failed</option>
                 <option value="Figma">Figma</option>
                 <option value="Reference">Reference</option>
